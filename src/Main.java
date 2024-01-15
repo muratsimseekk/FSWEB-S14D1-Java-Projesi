@@ -1,5 +1,7 @@
 import com.workintech.model.Circle;
+import com.workintech.model.Cuboid;
 import com.workintech.model.Cylinder;
+import com.workintech.model.Rectangle;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,7 +20,21 @@ public class Main {
         System.out.println("Cylinder Area = " + cylinder.getArea());
         System.out.println("Cylinder Volume = " + cylinder.getVolume());
 
-        System.out.println("*********** Silindir icin **********");
+        System.out.println("*********** Havuz Icin **********");
+
+        Rectangle rectangle = new Rectangle(5,10);
+
+        System.out.println("Rectangle width = " + rectangle.getWidth());
+        System.out.println("Rectangle length = " + rectangle.getLength());
+        System.out.println("Rectangle area = " + rectangle.getArea());
+
+        Cuboid cuboid = new Cuboid(5,10,5);
+
+        System.out.println("Cuboid width = " + cuboid.getWidth());
+        System.out.println("Cuboid length = " + cuboid.getLength());
+        System.out.println("Cuboid Area = " + cuboid.getArea());
+        System.out.println("Cuboid Height = " + cuboid.getHeight());
+        System.out.println("Cuboid Volume = " + cuboid.getVolume());
 
 
     }
