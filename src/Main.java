@@ -1,7 +1,4 @@
-import com.workintech.model.Circle;
-import com.workintech.model.Cuboid;
-import com.workintech.model.Cylinder;
-import com.workintech.model.Rectangle;
+import com.workintech.model.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -37,5 +34,27 @@ public class Main {
         System.out.println("Cuboid Volume = " + cuboid.getVolume());
 
 
+        System.out.println("********** Employee icin *************");
+
+        HRManager hrManager = new HRManager(1,"HR Manager Ali" ,5000);
+
+        JuniorDeveloper juniorDeveloper = new JuniorDeveloper(2,"Junior Veli" , 2000);
+        hrManager.addEmployee(juniorDeveloper);
+
+        MidDeveloper midDeveloper = new MidDeveloper(3,"Medium Mustafa" , 3000);
+        hrManager.addEmployee(midDeveloper);
+
+        SeniorDeveloper seniorDeveloper = new SeniorDeveloper(4,"Senior Kemal" , 4000);
+        hrManager.addEmployee(seniorDeveloper);
+
+        hrManager.work();
+        juniorDeveloper.work();
+        midDeveloper.work();
+        seniorDeveloper.work();
+
+        JuniorDeveloper juniorDeveloper2 = new JuniorDeveloper(5,"Junior Hasan" , 2000);
+        hrManager.addEmployee(juniorDeveloper2);
+
+        juniorDeveloper2.work();
     }
 }
